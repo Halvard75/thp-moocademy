@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>Le Théâtre d'Edward</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+		<meta name="robots" content="noindex, nofollow" />
+	
+</head>
+<body class="body"> 
+	
+	
+<!-- /////////////////////////////////Header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <%= render "layouts/header" %>
+
+    
+	<div class="slider">
+        <%= image_tag("img/slider.jpg") %>
+	</div>
+	
+<!-- /////////////////////////////////Main\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+	<div class="contenu">
+		<main class="main">
+			<div class="concept">
+				<div class="titre-concept">
+					<h2 id="h2-troupe">La troupe :</h2>
+				</div>
+                <%= image_tag("img/piano.jpg")%>
+				<div class="troupe">
+					<p>Bienvenue dans l'univers du spectacle, de l'animation et dans l'art vivant sous toutes ses formes.Le théâtre d’Edward propose un très large choix d'animations et de spectacles pour les enfants</p>
+				</div>
+				<div class="troupe-2">
+					<p>Ces spectacles peuvent s’adapter à des lieux qui ne sont pas spécifiquement destinés à l’accueil de spectacles (écoles, bibliothèques, centres de loisirs…).</p>
+					<a href="troupe.html"><p class="read-more">En savoir plus...</p></a>
+				</div>
+				<%= image_tag("img/baleine.jpg")%>
+			</div>
+			<div class="nouveau">
+				<div class="titre-nouveau">
+					<h2 id="h2-spectacle">Nouveau spectacle : 
+						<h3 id="h3-spectacle">SOS Terre</h3>
+					</h2>
+				</div>
+				<%= image_tag("img/globe.jpg")%>
+				<div class="spectacle">
+					<p>Atlas, le gardien de toutes les planètes est très en colère après la terre…
+Les hommes n’y font que des bêtises ! La preuve : Madeleine la baleine a ingurgité beaucoup trop de choses polluées dans l’océan glacé… elle est malade et ne peut plus chanter !</p>
+					<p>Si la baleine ne chante plus, le volcan Terror explosera de colère et fera fondre la banquise !</p>
+				</div>
+				<div class="troupe-2-2">
+				<p>Supernova, la petite étoile a décidé d’aider son ami Atlas ; avec tous les animaux de la banquise, l’ours, le phoque, la chouette arctique et le pingouin, ils vont transporter la baleine jusqu’au jardin de Nicolas qui saura la soigner avec ses plantes.</p>
+					<a href="spectacles.html"><p class="read-more-red">En savoir plus...</p></a>
+				</div>
+				<%= image_tag("img/marionette.jpg")%>
+			</div>
+		</main>
+
+<!-- /////////////////////////////////Aside\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+		<aside class="aside">
+			<h2>Thèmes des spéctacles</h2>
+			<div class="theme">
+				<div class="grandir">
+					<a href="spectacles.html">
+						<%= image_tag("img/grandir.jpg")%>
+					</a>
+				</div>
+				<div class="tous">
+					<a href="spectacles.html">
+						<%= image_tag("img/tous.jpg")%>
+					</a>
+				</div>
+				<div class="plaisir">
+					<%= image_tag("img/plaisir.jpg")%>
+				</div>	
+			</div>
+		</aside>
+
+<!-- /////////////////////////////////Footer\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+        
+        <%= render "layouts/footer" %>
+
+	</div>
+	
+	
+</body>
+    
+</html>
